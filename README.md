@@ -29,12 +29,32 @@ Before running this project, make sure you have the following prerequisites inst
    npm install
    ```
 
-4. Configure the database:
+4. Build the project:
+
+   ```shell
+   npm run build
+   ```
+
+   This will transpile the TypeScript code into JavaScript.
+
+5. Set up environment variables:
+
+   - Create a new file named `.env` in the root directory.
+   - Add the necessary environment variables to the `.env` file. For example:
+
+     ```plaintext
+     PORT=3000
+     MONGODB_URL=mongodb://localhost:27017/blog
+     ```
+
+   Update the `MONGODB_URL` value if your MongoDB configuration differs.
+
+6. Configure the database:
 
    - Make sure MongoDB is installed and running.
    - Update the MongoDB connection URL in the `src/db.ts` file if necessary.
 
-5. Start the server:
+7. Start the server:
 
    ```shell
    npm start
